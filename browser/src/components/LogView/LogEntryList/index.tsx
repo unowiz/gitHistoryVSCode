@@ -1,4 +1,5 @@
 import * as React from 'react';
+import * as ReactDataGrid from 'react-data-grid';
 import { Element, Events, scrollSpy } from 'react-scroll';
 import { LogEntry } from '../../../definitions';
 import LogEntryView from '../LogEntry';
@@ -51,20 +52,64 @@ export default class LogEntryList extends React.Component<ResultProps> {
             return null;
         }
 
-        const results = this.props.logEntries.map(entry =>
-            <Element name={entry.hash.full} className='myItem' key={entry.hash.full}>
-                <LogEntryView
-                    key={entry.hash.full}
-                    logEntry={entry}
-                    onViewCommit={this.props.onViewCommit}
-                    onClick={this.props.onClick} />
-            </Element>
-        );
+        // const results = this.props.logEntries.map(entry =>
+        //     <Element name={entry.hash.full} className='myItem' key={entry.hash.full}>
+        //         <LogEntryView
+        //             key={entry.hash.full}
+        //             logEntry={entry}
+        //             onViewCommit={this.props.onViewCommit}
+        //             onClick={this.props.onClick} />
+        //     </Element>
+        // );
+
+
+        // return (
+        //     // tslint:disable-next-line:react-this-binding-issue
+        //     <div ref={(ref) => this.ref = ref}>
+        //         {results}
+        //     </div>
+        // );
+
+
+        const rows = this.props.logEntries.map(entry => {
+            return {
+                id: entry.author.name,
+                title: entry.subject,
+                count: entry.author.date.toLocaleString()
+            };
+        });
+        // let rows = [];
+        // for (let i = 1; i < 1000; i++) {
+        //   rows.push({
+        //     id: i,
+        //     title: 'Title ' + i,
+        //     count: i * 1000
+        //   });
+        // }
+
+        // this._rows = rows;
+
+        const columns = [
+            { key: 'id', name: 'Author' },
+            { key: 'title', name: 'Message' },
+            { key: 'count', name: 'Date' }];
+
+        const style = {
+            marginLeft: '0.3em',
+            backgroundColor: 'transparent'
+        };
+
         return (
             // tslint:disable-next-line:react-this-binding-issue
             <div ref={(ref) => this.ref = ref}>
-                {results}
+                <ReactDataGrid style={style}
+                    columns={columns}
+                    rowGetter={(i) => rows[i]}
+                    rowsCount={rows.length}
+                    minHeight={500} />);
             </div>
         );
+
     }
+
 }

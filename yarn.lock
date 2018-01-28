@@ -135,6 +135,12 @@
   version "3.0.32"
   resolved "https://registry.yarnpkg.com/@types/query-string/-/query-string-3.0.32.tgz#c780ae7ec1322df4db88fc5644f9c8298c6426a9"
 
+"@types/react-data-grid@^2.0.8":
+  version "2.0.8"
+  resolved "https://registry.yarnpkg.com/@types/react-data-grid/-/react-data-grid-2.0.8.tgz#f4f638e56deb2b58eaf9b00fffb9ec320d5fbdba"
+  dependencies:
+    "@types/react" "*"
+
 "@types/react-dom@^16.0.2":
   version "16.0.3"
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-16.0.3.tgz#8accad7eabdab4cca3e1a56f5ccb57de2da0ff64"
@@ -6289,6 +6295,10 @@ react-css-themr@^2.1.2:
   dependencies:
     hoist-non-react-statics "^1.2.0"
     invariant "^2.2.1"
+
+react-data-grid@^3.0.8:
+  version "3.0.8"
+  resolved "https://registry.yarnpkg.com/react-data-grid/-/react-data-grid-3.0.8.tgz#e5125d5695c5bfbb0b4af3494661a5f1dff3b66d"
 
 react-deep-force-update@^2.1.1:
   version "2.1.1"
