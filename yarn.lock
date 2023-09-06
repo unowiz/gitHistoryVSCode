@@ -194,9 +194,9 @@
     "@types/express-serve-static-core" "*"
     "@types/mime" "*"
 
-"@types/tapable@*":
-  version "0.2.4"
-  resolved "https://registry.yarnpkg.com/@types/tapable/-/tapable-0.2.4.tgz#8181a228da46185439300e600c5ae3b3b3982585"
+"@types/tapable@^0":
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/@types/tapable/-/tapable-0.2.5.tgz#2443fc12da514c81346b1a665675559cee21fa75"
 
 "@types/tmp@0.0.31":
   version "0.0.31"
@@ -212,13 +212,14 @@
   version "1.13.3"
   resolved "https://registry.yarnpkg.com/@types/webpack-env/-/webpack-env-1.13.3.tgz#0ecbe70f87341767793774d3683b51aa3246434c"
 
-"@types/webpack@^2.2.4":
-  version "2.2.16"
-  resolved "https://registry.yarnpkg.com/@types/webpack/-/webpack-2.2.16.tgz#9ca93f468ab3a8eb4b6f45f589acf58c8133aa9b"
+"@types/webpack@^3.0.0":
+  version "3.8.22"
+  resolved "https://registry.yarnpkg.com/@types/webpack/-/webpack-3.8.22.tgz#aa266c2658596b5ca828b87d1b15b751fa6e989b"
   dependencies:
     "@types/node" "*"
-    "@types/tapable" "*"
+    "@types/tapable" "^0"
     "@types/uglify-js" "*"
+    source-map "^0.6.0"
 
 abbrev@1:
   version "1.1.1"
@@ -2195,7 +2196,7 @@ etag@~1.8.1:
   version "1.8.1"
   resolved "https://registry.yarnpkg.com/etag/-/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
 
-event-stream@^3.3.1, event-stream@~3.3.4:
+event-stream@3.3.4, event-stream@^3.3.1, event-stream@~3.3.4:
   version "3.3.4"
   resolved "https://registry.yarnpkg.com/event-stream/-/event-stream-3.3.4.tgz#4ab4c9a0f5a54db9338b4c34d86bfce8f4b35571"
   dependencies:
@@ -3973,9 +3974,9 @@ jade@0.26.3:
     commander "0.6.1"
     mkdirp "0.3.0"
 
-jquery@^3.1.1, jquery@x.*:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.2.1.tgz#5c4d9de652af6cd0a770154a631bba12b015c787"
+jquery@^3.5.0, jquery@x.*:
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.5.0.tgz#9980b97d9e4194611c36530e7dc46a58d7340fc9"
 
 js-base64@^2.1.5, js-base64@^2.1.9:
   version "2.4.1"
@@ -6587,7 +6588,7 @@ redux-actions@^2.2.1:
     lodash-es "^4.17.4"
     reduce-reducers "^0.1.0"
 
-redux-thunk@^2.2.0:
+redux-thunk@2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/redux-thunk/-/redux-thunk-2.2.0.tgz#e615a16e16b47a19a515766133d1e3e99b7852e5"
 
