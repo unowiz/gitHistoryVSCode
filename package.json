@@ -414,7 +414,7 @@
         "istanbul": "^0.4.5",
         "jquery": "^3.1.1",
         "mocha": "^2.3.3",
-        "postcss": "^5.2.11",
+        "postcss": "^8.4.31",
         "postcss-browser-reporter": "^0.5.0",
         "postcss-cssnext": "^2.9.0",
         "postcss-import": "^9.1.0",
