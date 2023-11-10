@@ -457,7 +457,7 @@
     },
     "dependencies": {
         "animate.css": "^3.5.2",
-        "axios": "^0.16.2",
+        "axios": "^1.6.0",
         "body-parser": "^1.17.2",
         "bootstrap": "^3.3.7",
         "cors": "^2.8.4",
